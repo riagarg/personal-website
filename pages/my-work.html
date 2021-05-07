@@ -15,6 +15,37 @@ Licence URI: https://www.os-templates.com/template-terms
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <link rel="icon" href="http://example.com/favicon.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<style>
+    .structure {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    .heading {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 30px;
+    } 
+    .bold {
+        color: black ;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .center {
+        text-align: center;
+    }
+    .m {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .p {
+        padding: 15%;
+        padding-top: 7%
+    }  
+    .item {
+      padding-bottom: 5%;
+    }          
+</style>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -62,34 +93,88 @@ Licence URI: https://www.os-templates.com/template-terms
   <main class="hoc container clear"> 
     <!-- main body -->
     <!-- ################################################################################################ -->
-    <div class="content"> 
+    <div class= "container-fluid structure">
+        <div class="item">
+                <div class="heading">
+                    <span class = "columbiatweet">Data Visualization: GBBO  </span><br>
+                </div>
+                <span class= "tweettext"> This is a visualization inspired by the Great British Bake Off.
+                </br> To see how it was made check out this <a href="https://drive.google.com/drive/folders/1iyshh6uF4xEYVGPBKY1QURmrUvMgzv8k?usp=sharing">link</a>
+                </span>
+                <div class="p">
+                    <a href="https://rounakbera.github.io/gbbo-riskiness/"><img src="../images/demo/gallery/gbbo.png" class="img-fluid" alt="gbbo visualization"></a>
+                </div>
+          </div>
+          <div class="item">
+              <div class="heading">
+                  <span class = "columbiatweet">Data Visualization: Love Island  </span><br>
+              </div>
+              <span class= "tweettext"> To see how it was made check out this <a href="https://drive.google.com/drive/folders/1Kil1T_TvlkbJWJgR8qNLXXv_J9fyZN7j?usp=sharing">link</a>
+              </span>
+              <div class="p">
+                  <a href="https://riagarg.github.io/love-island-viz/"><img src="../images/demo/gallery/loveisland.png"  class="img-fluid" alt="love island visualization"></a>
+              </div>
+        </div>
+        <div class="item">
+            <div class="heading">
+                <span class = "columbiatweet">Data Visualization: The Evolution of Sitcoms</span><br>
+            </div>
+            <span class= "tweettext"> 
+              </br> To see how it was made check out this <a href="https://drive.google.com/drive/folders/1zU6iu7m7HPokmcxk3dPEdAxPz-3QENRZ?usp=sharing">link</a>
+            </span>
+            <div class="p">
+                <a href="https://www.figma.com/proto/kTVtmo7O3vUvdC2poQPTjL/sitcom-evolution?node-id=1%3A3&scaling=min-zoom"><img src="../images/demo/gallery/office.png" class="img-fluid"  alt=""></a>
+            </div>
+      </div>
+        <div class="item">
+            <div class="heading">
+                <span class = "columbiatweet">Writing: A Letter to Technologists</span><br>
+            </div>
+            <div class="p">
+                <a href="https://medium.com/@rg3059/a-letter-to-young-technologists-a5c647b4fda7"><img src="../images/demo/gallery/computer.jpg" class="img-fluid"  alt=""></a>
+            </div>
+      </div>
+    </div>
+    <!-- <div class="content" id="gallery">
+      <div class= "one_third">
+
+      </div>
+      <div class= "one_third"> 
+            <header class="heading">Data Visualizations</header>
+            <ul class="nospace clear" >
+              <li><a href="https://rounakbera.github.io/gbbo-riskiness/"><img src="../images/demo/gallery/gbbo.png" alt="gbbo visualization"></a></li>
+            </ul>
+      </div> 
+
+    </div> -->
+    <!-- <div class="content">  -->
       <!-- ################################################################################################ -->
-      <div id="gallery">
+      <!-- <div id="gallery">
         <figure>
-          <header class="heading">Data Visualizations</header>
+          <header class="heading" >Data Visualizations</header>
           <ul class="nospace clear">
             <li class="one_quarter first"><a href="https://rounakbera.github.io/gbbo-riskiness/"><img src="../images/demo/gallery/gbbo.png" alt="gbbo visualization"></a></li>
-            <li class="one_quarter"><a href="https://riagarg.github.io/love-island-viz/"><img src="../images/demo/gallery/loveisland.png" alt="love island visualization"></a></li>
+            <li class="one_quarter"><a href="https://riagarg.github.io/love-island-viz/"><img src="../images/demo/gallery/loveisland.png" alt="love island visualization"></a></li> -->
             <!-- <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
             <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li> -->
-          </ul>
+          <!-- </ul> -->
           <!-- <figcaption>Gallery Description Goes Here</figcaption> -->
-        </figure>
+        <!-- </figure>
       </div>
       <div id="gallery">
           <figure>
             <header class="heading">Writing</header>
             <ul class="nospace clear">
-              <li class="one_quarter first"><a href="https://medium.com/@rg3059/a-letter-to-young-technologists-a5c647b4fda7"><img src="../images/demo/gallery/computer.jpg" alt=""></a></li>
+              <li class="one_quarter first"><a href="https://medium.com/@rg3059/a-letter-to-young-technologists-a5c647b4fda7"><img src="../images/demo/gallery/computer.jpg" alt=""></a></li> -->
               <!-- <li class="one_quarter"><a href="https://medium.com/emergent-concepts-in-new-media-art-2019/sitcoms-evolution-into-database-format-818e5179b999"><img src="../images/demo/gallery/daviddobrik.jpg" alt=""></a></li> -->
               <!-- <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li> -->
-            </ul>
+            <!-- </ul> -->
             <!-- <figcaption>Gallery Description Goes Here</figcaption> -->
-          </figure>
-        </div>
+          <!-- </figure>
+        </div> -->
       <!-- ################################################################################################ -->
-    </div>
+    <!-- </div> -->
     <!-- ################################################################################################ -->
     <!-- / main body -->
     <div class="clear"></div>
