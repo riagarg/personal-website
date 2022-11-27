@@ -4,11 +4,11 @@
         <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            .gray {
+            .background-color {
                 background: #E8E2DB;
             }
 
-            .screenbox {
+            .page {
                 height:100vh;
                 display: flex;
                 flex-direction: row;
@@ -16,7 +16,7 @@
                 align-items: center;
                 justify-content: center;
             }
-            .vertical-center {
+            .text-sec-1 {
                 display: flex;
                 flex-direction: column;
                 flex-basis: 25%;
@@ -24,18 +24,10 @@
                 height: 40%
        
             }
-            .center-img {
+            .headshot {
                 display: flex;
                 flex-basis: 20%
             
-            }
-            @media screen and (max-width: 800px) {
-                .vertical-center, .center-img {
-                    width: 50%;
-                }
-                .screenbox {
-                    flex-direction: column;
-                }
             }
             .text-sec-2 {
                 text-align: center;
@@ -43,13 +35,13 @@
                 font-size: 20px;
                 flex-basis: 33%;
             }
-            .p-spaced {
-                padding: 10px;
-            }
             .text-sec-3 {
                 flex-basis: 33%;
                 font-family: 'Sen';
                 font-size: 20px
+            }
+            .p-spaced {
+                padding: 10px;
             }
             .heading {
                 background: lightblue ;
@@ -65,7 +57,6 @@
                 text-decoration: underline;
             }
             .emphasis {
-                /* font-style: italic; */
                 color: #636363;
             }
             .h {
@@ -77,10 +68,10 @@
                 padding: 10px;
             }   
             @media screen and (max-width: 800px) {
-                .vertical-center, .center-img {
+                .text-sec-1, .headshot {
                     width: 50%;
                 }
-                .screenbox {
+                .page {
                     flex-direction: column;
                 }
                 .h {
@@ -94,13 +85,13 @@
             }     
         </style>
 </head>
-<body class= "gray">
-    <div class="screenbox">
+<body class= "background-color">
+    <div class="page">
 
-                <div class="center-img">
-                    <img src="images/demo/backgrounds/ria-circle.png" class="img-fluid" alt="ria headshot">
+                <div class="headshot">
+                    <img src="images/ria-circle.png" class="img-fluid" alt="ria headshot">
                 </div>
-                <div class="vertical-center textall">
+                <div class="text-sec-1 textall">
                     <div>
                         <span class="h" >
                             ria garg
@@ -124,7 +115,7 @@
                 </div>
         </div>
     <a id="aboutme">
-        <div class="screenbox">
+        <div class="page">
     
                 <div class=" text-sec-2">
                     <p class="p-spaced">
@@ -143,7 +134,7 @@
         </div>
     </a>
     <a id="mywork">
-        <div class="screenbox">
+        <div class="page">
             <div class="text-sec-3 ">
                 my work:
                 <ol>
