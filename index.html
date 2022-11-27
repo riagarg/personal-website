@@ -16,14 +16,8 @@
                 align-items: center;
                 justify-content: center;
             }
-            .title-containers {
-            }
-            .p-spaced {
-                padding: 10px;
-            }
             .vertical-center {
                 display: flex;
-                /* position: absolute; */
                 flex-direction: column;
                 flex-basis: 25%;
                 padding-right: 3%;
@@ -35,12 +29,28 @@
                 flex-basis: 20%
             
             }
-      
-            .padding-vertical {
-                padding-top: 7%;
-                padding-bottom: 7%;
+            @media screen and (max-width: 800px) {
+                .vertical-center, .center-img {
+                    width: 50%;
+                }
+                .screenbox {
+                    flex-direction: column;
+                }
             }
- 
+            .text-sec-2 {
+                text-align: center;
+                font-family: 'Sen';
+                font-size: 20px;
+                flex-basis: 33%;
+            }
+            .p-spaced {
+                padding: 10px;
+            }
+            .text-sec-3 {
+                flex-basis: 33%;
+                font-family: 'Sen';
+                font-size: 20px
+            }
             .heading {
                 background: lightblue ;
                 text-align: center;
@@ -54,17 +64,6 @@
                 color: gray;
                 text-decoration: underline;
             }
-            .text-sec-2 {
-                text-align: center;
-                font-family: 'Sen';
-                font-size: 20px;
-                flex-basis: 33%;
-            }
-            .text-sec-3 {
-                flex-basis: 33%;
-                font-family: 'Sen';
-                font-size: 20px
-            }
             .emphasis {
                 /* font-style: italic; */
                 color: #636363;
@@ -76,7 +75,23 @@
                 color: black ;
                 font-weight: bold;
                 padding: 10px;
-            }        
+            }   
+            @media screen and (max-width: 800px) {
+                .vertical-center, .center-img {
+                    width: 50%;
+                }
+                .screenbox {
+                    flex-direction: column;
+                }
+                .h {
+                    font-size: 40px;
+                }
+                .text-sec-2, .text-sec-3 {
+                    font-size: 16px;
+                    width: 80%;
+                    flex-basis: 90%;
+                }
+            }     
         </style>
 </head>
 <body class= "gray">
