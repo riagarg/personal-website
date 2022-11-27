@@ -2,21 +2,53 @@
 <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             .gray {
                 background: #E8E2DB;
             }
+
             .screenbox {
                 height:100vh;
-                display: flexbox;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
             }
+            .title-containers {
+            }
+            .p-spaced {
+                padding: 10px;
+            }
+            .vertical-center {
+                display: flex;
+                /* position: absolute; */
+                flex-direction: column;
+                flex-basis: 25%;
+                padding-right: 3%;
+                height: 40%
+       
+            }
+            .center-img {
+                display: flex;
+                flex-basis: 20%
+            
+            }
+      
+            .padding-vertical {
+                padding-top: 7%;
+                padding-bottom: 7%;
+            }
+ 
+            .heading {
+                background: lightblue ;
+                text-align: center;
+                padding: 15px;
+            } 
             .textall {
                 text-align: right;
                 font-family: 'Sen';
-                /* display: flex;
-                flex-direction: column;
-                flex-grow: 3 
-                height: 100vh*/
             }
             .link {
                 color: gray;
@@ -25,9 +57,11 @@
             .text-sec-2 {
                 text-align: center;
                 font-family: 'Sen';
-                font-size: 20px
+                font-size: 20px;
+                flex-basis: 33%;
             }
             .text-sec-3 {
+                flex-basis: 33%;
                 font-family: 'Sen';
                 font-size: 20px
             }
@@ -38,41 +72,6 @@
             .h {
                 font-size: 64px;
             }
-            .p-spaced {
-                padding: 10px;
-            }
-            .vertical-center {
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                -ms-transform: translateY(80%);
-                transform: translateY(80%);
-            }
-            .horizontal-center {
-                padding-left: 35%;
-                padding-right: 35%;
-            }
-            .padding-vertical {
-                padding-top: 7%;
-                padding-bottom: 7%;
-            }
-            .padding-top {
-                padding-top: 15;
-            }
-            .center-img {
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                -ms-transform: translateY(80%);
-                transform: translateY(80%);
-                margin-left: 45px;
-                margin-right: 45px;
-            }
-            .heading {
-                background: lightblue ;
-                text-align: center;
-                padding: 15px;
-            } 
             .bold {
                 color: black ;
                 font-weight: bold;
@@ -82,16 +81,11 @@
 </head>
 <body class= "gray">
     <div class="screenbox">
-        <div class="row">
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-3">
+
                 <div class="center-img">
                     <img src="images/demo/backgrounds/ria-circle.png" class="img-fluid" alt="ria headshot">
                 </div>
-            </div>
-            <div class="col-md-3 textall">
-                <div class="vertical-center">
+                <div class="vertical-center textall">
                     <div>
                         <span class="h" >
                             ria garg
@@ -113,18 +107,11 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-            </div>
         </div>
-    </div>
     <a id="aboutme">
         <div class="screenbox">
-            <div class="row">
-                <div class="col-md-4">
-
-                </div>
-                <div class="col-md-4 text-sec-2  padding-vertical">
+    
+                <div class=" text-sec-2">
                     <p class="p-spaced">
                         <span class="textsec-2-span"> Hi, my name is <b>Ria</b>! I am <span class="emphasis">New York</span> based, working on the platform team at a startup. Previously, I spent a year at Microsoft as a software engineer and before that I studied computer science at Columbia University. </span>
                     </p>
@@ -138,12 +125,11 @@
                         riagarg@gmail.com // @riaagarg
                     </p>
                 </div>
-            </div>
         </div>
     </a>
     <a id="mywork">
         <div class="screenbox">
-            <div class="horizontal-center text-sec-3 padding-vertical">
+            <div class="text-sec-3 ">
                 my work:
                 <ol>
                     <li class="p-spaced">
@@ -164,9 +150,6 @@
                     </li>
                     <li class="p-spaced">
                         <a href="https://medium.com/@rg3059/a-letter-to-young-technologists-a5c647b4fda7"><span class="link">Thoughts on being young in technology</span></a>
-                    </li>
-                    <li class="p-spaced">
-                            <a href="https://medium.com/@rg3059/a-letter-to-young-technologists-a5c647b4fda7"><span class="link">Thoughts on being young in technology</span></a>
                     </li>
                     <li class="p-spaced">
                          <a href="https://lionsight.herokuapp.com/"><span class="link">Wikipedia contention detector</span></a>
